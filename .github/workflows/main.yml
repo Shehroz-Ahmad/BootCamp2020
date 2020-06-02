@@ -31,6 +31,6 @@ jobs:
     - name : install surge
       run: npm install -g surge
     - name : Run surge
-      run: surge -/shehrozahmadapp.surge.sh --token$((secret.surge_token))
+      run: surge -/shehrozahmadapp.surge.sh --token$((secrets.surge_token))
+      
         
-        echo test, and deploy your project.
